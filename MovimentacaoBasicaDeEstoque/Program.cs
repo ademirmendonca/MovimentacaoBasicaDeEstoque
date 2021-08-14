@@ -27,6 +27,15 @@ namespace MovimentacaoBasicaDeEstoque
 
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + produto);
+                       
+
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser removido do estoque: ");
+            qtd = int.Parse(Console.ReadLine());
+            produto.RemoverProdutos(qtd);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + produto);
 
         }
     }

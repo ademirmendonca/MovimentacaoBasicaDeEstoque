@@ -24,6 +24,12 @@ namespace MovimentacaoBasicaDeEstoque
         }
 
 
+        public void RemoverProdutos(int quantidade)
+        {            
+            Quantidade -= quantidade;
+        }
+
+
         //Definição de como um produto será transformado em forma de String
         public override string ToString()
         {
