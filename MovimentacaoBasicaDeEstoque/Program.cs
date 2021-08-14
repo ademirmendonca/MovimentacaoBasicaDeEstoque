@@ -17,7 +17,16 @@ namespace MovimentacaoBasicaDeEstoque
             Console.Write("Quantidade no estoque: ");
             produto.Quantidade = int.Parse(Console.ReadLine());
 
+            Console.WriteLine();
             Console.WriteLine("Dados do produto: " + produto);
+
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser adicionado no estoque: ");
+            int qtd = int.Parse(Console.ReadLine());
+            produto.AdicionarProdutos(qtd);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + produto);
 
         }
     }
