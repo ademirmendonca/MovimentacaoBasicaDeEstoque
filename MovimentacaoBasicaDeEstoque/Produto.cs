@@ -8,6 +8,8 @@ namespace MovimentacaoBasicaDeEstoque
         public double Preco;
         public int Quantidade;
 
+        
+
         //Construtor adicionado para exigir que os dados sejam informados
         public Produto(string nome, double preco, int quantidade)
         {
@@ -16,6 +18,13 @@ namespace MovimentacaoBasicaDeEstoque
             Quantidade = quantidade;
         }
 
+        //Novo contrutor
+        public Produto (string nome, double preco)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = 5;
+        }
 
         public double ValorTotalEmEstoque()
         {
